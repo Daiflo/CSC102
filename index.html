@@ -21,10 +21,28 @@
             </p>
             <body style="background-color:darkgray;"></body>
 
-
-            <button id="btnClickHere" onClick="alert('You clicked here');">Start</button>
-
-            <button id="btnClickHere" onClick="alert('You clicked here');">Stop</button>
+            <input type="button" id="btnStart" value="Start" onclick="btnStartClicked();" onclick="displayAlert('You started it');" style=width:100px;height:33px;border-radius:20px; />
+            <!--The Start button is disabled when clicked -->
+                <input type="button" id="btnStop" value="Stop" onclick="btnStopClicked();" onclick="displayAlert('Cant believe you stopped it');" style=width:100px;height:33px;border-radius:20px; />
+            <!--The Stop button is disabled when clicked -->
+            <script>
+                
+                function btnStartClicked(){
+                    document.getElementById("btnStart").disabled= true;
+                    document.getElementById("btnStop").disabled= false;
+            //This function allows you to disable and enable the buttons 
+            }
+                function btnStopClicked(){
+                    document.getElementById("btnStart").disabled= false;
+                    document.getElementById("btnStop").disabled= true;
+            //This function allows you to disable and enable the buttons 
+            }
+                </script>
+            <audio controls>
+                <source src="us-lab-background.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            <!--This adds the audio -->
+                </audio>
 
             <p>
                 Countdown: <span id="DisplayCountdown"> </span>
