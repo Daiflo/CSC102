@@ -106,3 +106,4 @@ function countdownCode(pageElement){
     // The countdown has ended 
 
 }
+
