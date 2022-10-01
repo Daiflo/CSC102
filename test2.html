@@ -1,0 +1,145 @@
+<html> <!--Daisy Saenz -->
+    <head> 
+        <title> </title>
+        <script src="helper.js">
+    </script>
+    </head>
+    <body> 
+        <h1> </h1> 
+        <p>
+            
+            <input type="text" value= "Data Type" style=font-weight:bold;font-size:13pt; />
+        <!--This makes the Data Type text bigger-->
+            <input type="text" value="Reading" style=font-weight:bold;font-size:13pt; />
+        <!--This makes the Reading text bigger-->
+            <br>
+            <input type="text" value="Time elapsed:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="15 seconds" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Latitud:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Longitude:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="GPS Altitude:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="BMP Sensor Altitude:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="30383.04" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="BMP Sensor Pressure:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="2.34" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="BMP Sensor Temperature:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Digital Sensor Temperature:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="24.12" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="CSS Sensor Temperature:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="25" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="CSS Sensor eCO2:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="400" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="CSS Sensor TVOC:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="UV:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Accel X:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="-0.87" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Accel Y:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="-0.02" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Accel Z:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="9.61" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Magnetic X:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0.13" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Magnetic Y:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0.57" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Magnetic Z:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="-0.24" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Gyro X:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="4.66" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Gryo Y:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="0.01" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <br>
+            <input type="text" value="Gyro Z:" style=width:20.3%; />
+        <!--This text adds to the table-->
+            <input type="text" value="-0.4" style=width:20.3%; />
+        <!--This number adds to the table-->
+            <p>
+            <input type="button" id="btnStart" value="Start" onclick="btnStartClicked();" onclick="displayAlert('You started it');" style=width:100px;height:33px;border-radius:20px; />
+        <!--The Start button is disabled when clicked -->
+            <input type="button" id="btnStop" value="Stop" onclick="btnStopClicked();" onclick="displayAlert('Cant believe you stopped it');" style=width:100px;height:33px;border-radius:20px; />
+        <!--The Stop button is disabled when clicked -->
+            <p>
+            <script>
+                function btnStartClicked(){
+                    document.getElementById("btnStart").disabled= true;
+                    document.getElementById("btnStop").disabled= false;
+            //This function allows you to disable and enable the buttons 
+            }
+                function btnStopClicked(){
+                    document.getElementById("btnStart").disabled= false;
+                    document.getElementById("btnStop").disabled= true;
+            //This function allows you to disable and enable the buttons 
+            }
+                </script>
+            <audio controls>
+                <source src="us-lab-background.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            <!--This adds the audio -->
+                </audio>
+        </p>
+    </body>
+</html>
